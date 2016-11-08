@@ -1,0 +1,20 @@
+{
+  "name": "detect-passive-events",
+  "version": "0.0.0",
+  "description": "Detect if the browser supports passive events",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafrex/detect-passive-events.git"
+  },
+  "keywords": [
+    "detect",
+    "passive events"
+  ],
+  "author": "Rafael Pedicini <code@rafrex.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rafrex/detect-passive-events/issues"
+  },
+  "homepage": "https://github.com/rafrex/detect-passive-events#readme"
+}
