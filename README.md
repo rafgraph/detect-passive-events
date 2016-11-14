@@ -53,7 +53,6 @@ Note that the `update()` function is run once at the time of import to set the o
   - [`detect-hover`][detectHoverRepo]
   - [`detect-pointer`][detectPointerRepo]
   - [`detect-touch-events`][detectTouchEventsRepo]
-  - [`detect-pointer-events`][detectPointerEventsRepo]
   - **`detect-passive-events`**
 
 
@@ -64,4 +63,3 @@ Note that the `update()` function is run once at the time of import to set the o
 [detectHoverRepo]: https://github.com/rafrex/detect-hover
 [detectPointerRepo]: https://github.com/rafrex/detect-pointer
 [detectTouchEventsRepo]: https://github.com/rafrex/detect-touch-events
-[detectPointerEventsRepo]: https://github.com/rafrex/detect-pointer-events
