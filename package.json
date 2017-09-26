@@ -1,6 +1,6 @@
 {
   "name": "detect-passive-events",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Detect if the browser supports passive events",
   "main": "lib/index.js",
   "scripts": {
