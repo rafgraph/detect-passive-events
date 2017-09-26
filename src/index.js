@@ -6,7 +6,7 @@ const detectPassiveEvents = {
       const options = Object.defineProperty({}, 'passive', {
         get() { passive = true; },
       });
-      window.addEventListener('test', null, options);
+      window.addEventListener('test', () => {}, options);
 
       detectPassiveEvents.hasSupport = passive;
     }
