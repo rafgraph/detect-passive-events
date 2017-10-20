@@ -3,6 +3,7 @@ node_modules
 
 # Transpiled lib
 lib
+es
 
 # Files marked with gitigx
 *gitigx*

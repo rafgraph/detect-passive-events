@@ -1,0 +1,10 @@
+{
+  "env": {
+    "cjs": {
+      "presets": [["env", { "loose": true }]],
+    },
+    "es": {
+      "presets": [["env", { "loose": true, "modules": false }]],
+    }
+  }
+}
