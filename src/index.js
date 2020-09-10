@@ -9,7 +9,7 @@ const detectPassiveEvents = {
       // note: have to set and remove a no-op listener instead of null
       // (which was used previously), becasue Edge v15 throws an error
       // when providing a null callback.
-      // https://github.com/rafrex/detect-passive-events/pull/3
+      // https://github.com/rafgraph/detect-passive-events/pull/3
       const noop = () => {};
       window.addEventListener('testPassiveEventSupport', noop, options);
       window.removeEventListener('testPassiveEventSupport', noop, options);

@@ -57,9 +57,9 @@ Note that the `update()` function is run once at the time of import to set the o
 
 
 <!-- links -->
-[liveDetectionTest]: http://detect-it.rafrex.com/#detect-passive-events
+[liveDetectionTest]: https://detect-it.rafgraph.dev/#detect-passive-events
 [passiveExplainer]: https://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md
-[detectItRepo]: https://github.com/rafrex/detect-it
-[detectHoverRepo]: https://github.com/rafrex/detect-hover
-[detectPointerRepo]: https://github.com/rafrex/detect-pointer
-[detectTouchEventsRepo]: https://github.com/rafrex/detect-touch-events
+[detectItRepo]: https://github.com/rafgraph/detect-it
+[detectHoverRepo]: https://github.com/rafgraph/detect-hover
+[detectPointerRepo]: https://github.com/rafgraph/detect-pointer
+[detectTouchEventsRepo]: https://github.com/rafgraph/detect-touch-events

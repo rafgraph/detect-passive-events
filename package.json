@@ -13,19 +13,19 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rafrex/detect-passive-events.git"
+    "url": "git+https://github.com/rafgraph/detect-passive-events.git"
   },
   "keywords": [
     "detect",
     "passive",
     "passive events"
   ],
-  "author": "Rafael Pedicini <code@rafrex.com>",
+  "author": "Rafael Pedicini <rafael@rafgraph.dev>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rafrex/detect-passive-events/issues"
+    "url": "https://github.com/rafgraph/detect-passive-events/issues"
   },
-  "homepage": "https://github.com/rafrex/detect-passive-events#readme",
+  "homepage": "https://github.com/rafgraph/detect-passive-events#readme",
   "devDependencies": {
     "babel-cli": "^6.23.0",
     "babel-eslint": "^7.1.1",
