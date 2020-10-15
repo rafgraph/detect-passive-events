@@ -2,13 +2,23 @@
   "name": "detect-passive-events",
   "version": "1.0.5",
   "description": "Detect if the browser supports passive events",
-  "main": "lib/index.js",
+  "source": "src/index.ts",
+  "main": "dist/detect-passive-events.js",
+  "umd:main": "dist/detect-passive-events.umd.min.js",
+  "module": "dist/detect-passive-events.esm.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "rm -rf lib && babel src --presets babel-preset-es2015 -d lib",
-    "prepublish": "npm run build"
+    "dev": "npm link && npm run watch && npm unlink",
+    "watch": "rm -rf dist && trap 'exit 0' SIGINT; microbundle watch --format esm,cjs --no-compress --strict & microbundle watch --format umd --compress --strict",
+    "build": "rm -rf dist && microbundle build --format esm,cjs --no-compress --strict && microbundle build --format umd --compress --strict",
+    "prepublishOnly": "npm run test && npm run build",
+    "tsc": "tsc --watch",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "coverage": "npx live-server coverage/lcov-report"
   },
   "files": [
-    "lib",
+    "dist",
     "src"
   ],
   "repository": {
@@ -25,13 +35,18 @@
   "bugs": {
     "url": "https://github.com/rafgraph/detect-passive-events/issues"
   },
-  "homepage": "https://github.com/rafgraph/detect-passive-events#readme",
+  "homepage": "https://detect-it.rafgraph.dev",
   "devDependencies": {
-    "babel-cli": "^6.23.0",
-    "babel-eslint": "^7.1.1",
-    "babel-preset-es2015": "^6.22.0",
-    "eslint": "^3.16.1",
-    "eslint-config-airbnb-base": "^10.0.1",
-    "eslint-plugin-import": "^2.2.0"
+    "@types/jest": "^26.0.14",
+    "jest": "^26.5.3",
+    "microbundle": "^0.12.4",
+    "prettier": "^2.1.2",
+    "ts-jest": "^26.4.1",
+    "typescript": "^4.0.3"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "printWidth": 100
   }
 }
