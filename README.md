@@ -1,6 +1,6 @@
 # Detect Passive Events
 
-Detects if the browser supports passive event listeners. Also available as part of [`detect-it`][detectitrepo].
+Detects if the browser supports passive event listeners. Tree-shakable and side-effect free. Also available as part of [`detect-it`][detectitrepo].
 
 [Live detection test][livedetectiontest]
 
@@ -29,7 +29,7 @@ if (supportsPassiveEvents) {
 
 ### Or use the script directly in the browser
 
-Optionally, instead using `npm install` you can the load the script directly in the browser. A minified UMD version is available form Unpkg for this purpose.
+Optionally, instead using `npm install` you can the load the script directly in the browser. A minified UMD version is available from Unpkg for this purpose.
 
 ```html
 <script src="https://unpkg.com/detect-passive-events/dist/detect-passive-events.umd.min.js"></script>
