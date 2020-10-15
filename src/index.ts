@@ -1,6 +1,6 @@
 // adapted from https://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md
 
-export let supportsPassiveEvents = false;
+export let supportsPassiveEvents: boolean = false;
 
 if (typeof window !== 'undefined' && typeof window.addEventListener === 'function') {
   const options = Object.defineProperty({}, 'passive', {

@@ -2,8 +2,9 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
+    "moduleResolution": "node",
     "sourceMap": true,
-    "outDir": "./ts-generated",
+    "outDir": "./generated-tsc",
     "strict": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,

@@ -11,8 +11,11 @@
     "dev": "npm link && npm run watch && npm unlink",
     "watch": "rm -rf dist && trap 'exit 0' SIGINT; microbundle watch --format esm,cjs --no-compress --strict & microbundle watch --format umd --compress --strict",
     "build": "rm -rf dist && microbundle build --format esm,cjs --no-compress --strict && microbundle build --format umd --compress --strict",
-    "prepublishOnly": "npm run build",
-    "tsc": "tsc --watch"
+    "prepublishOnly": "npm run test && npm run build",
+    "tsc": "tsc --watch",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "coverage": "npx live-server coverage/lcov-report"
   },
   "files": [
     "dist",
@@ -32,10 +35,13 @@
   "bugs": {
     "url": "https://github.com/rafgraph/detect-passive-events/issues"
   },
-  "homepage": "https://github.com/rafgraph/detect-passive-events#readme",
+  "homepage": "https://detect-it.rafgraph.dev",
   "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "jest": "^26.5.3",
     "microbundle": "^0.12.4",
     "prettier": "^2.1.2",
+    "ts-jest": "^26.4.1",
     "typescript": "^4.0.3"
   },
   "prettier": {
