@@ -7,6 +7,7 @@
   "umd:main": "dist/detect-passive-events.umd.min.js",
   "module": "dist/detect-passive-events.esm.js",
   "types": "dist/index.d.ts",
+  "sideEffects": false,
   "scripts": {
     "dev": "npm link && npm run watch && npm unlink",
     "watch": "rm -rf dist && trap 'exit 0' SIGINT; microbundle watch --format esm,cjs --no-compress --strict & microbundle watch --format umd --compress --strict",
