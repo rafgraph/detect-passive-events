@@ -4,6 +4,8 @@ Detects if the browser supports passive event listeners, also avaiable as part o
 
 [Live detection test][livedetectiontest]
 
+[![npm](https://img.shields.io/npm/dm/detect-passive-events?label=npm)](https://www.npmjs.com/package/detect-passive-events) [![npm bundle size](https://img.shields.io/bundlephobia/minzip/detect-passive-events?color=purple)](https://bundlephobia.com/result?p=detect-passive-events) ![npm type definitions](https://img.shields.io/npm/types/detect-passive-events?color=blue)
+
 > Note that the code used in the detection is adapted from this [Passive Events Explainer][passiveexplainer].
 
 ### Using `detect-passive-events`
