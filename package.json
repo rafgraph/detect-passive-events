@@ -1,6 +1,6 @@
 {
   "name": "detect-passive-events",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Detect if the browser supports passive events",
   "main": "dist/detect-passive-events.cjs.js",
   "module": "dist/detect-passive-events.esm.js",
