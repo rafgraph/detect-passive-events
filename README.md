@@ -32,12 +32,12 @@ if (supportsPassiveEvents) {
 Optionally, instead using `npm install` you can the load the script directly in the browser. A minified UMD version is available from Unpkg for this purpose.
 
 ```html
-<script src="https://unpkg.com/detect-passive-events/dist/detect-passive-events.umd.min.js"></script>
+<script src="https://unpkg.com/detect-passive-events/dist/detect-passive-events.umd.production.js"></script>
 ```
 
 ```js
-// it will be available on the window as detectPassiveEvents
-if (window.detectPassiveEvents.supportsPassiveEvents) {
+// it will be available on the window as DetectPassiveEvents
+if (window.DetectPassiveEvents.supportsPassiveEvents) {
   document.addEventListener('scroll', handleScroll, { capture: false, passive: true });
 } else {
   document.addEventListener('scroll', handleScroll, false);
