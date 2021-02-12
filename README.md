@@ -32,7 +32,7 @@ if (supportsPassiveEvents) {
 Optionally, instead using `npm install` you can the load the script directly in the browser. A minified UMD version is available from Unpkg for this purpose.
 
 ```html
-<script src="https://unpkg.com/detect-passive-events/dist/detect-passive-events.umd.production.js"></script>
+<script src="https://unpkg.com/detect-passive-events@2/dist/detect-passive-events.umd.production.js"></script>
 ```
 
 ```js

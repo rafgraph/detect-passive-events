@@ -7,8 +7,7 @@
   "types": "dist/index.d.ts",
   "sideEffects": false,
   "scripts": {
-    "dev": "npm link && npm run watch && npm unlink -g",
-    "build": "rollpkg build",
+    "build": "rollpkg build --addUmdBuild",
     "watch": "rollpkg watch",
     "prepublishOnly": "npm run lint && npm test && npm run build",
     "lint": "eslint src",
@@ -35,8 +34,8 @@
   },
   "homepage": "https://detect-it.rafgraph.dev",
   "devDependencies": {
-    "rollpkg": "^0.1.1",
-    "typescript": "^4.1.2"
+    "rollpkg": "^0.4.2",
+    "typescript": "^4.1.5"
   },
   "prettier": "rollpkg/configs/prettier.json",
   "eslintConfig": {
@@ -46,5 +45,8 @@
   },
   "jest": {
     "preset": "rollpkg"
+  },
+  "dependencies": {
+    "detect-it": "^4.0.1"
   }
 }
